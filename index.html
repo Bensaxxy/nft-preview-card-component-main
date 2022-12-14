@@ -3,43 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Four card feature section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="/style.css">
+  <title>Frontend Mentor | NFT preview card component</title>
 </head>
 <body>
+  <div class="container">
+    <img class="img" src="/images/image-equilibrium.jpg" alt="">
+
+   <a href="#"> <h3>Equilibrium #3429</h3> </a>
+
+    <p>Our Equilibrium collection promotes balance and calm.</p>
+
+    <!-- money-section -->
+
+    <div class="display-grid">
+      <div class="display-flex">
+        <img src="/images/icon-ethereum.svg" alt="">
+       <a href="#"><p class="p" >0.041 ETH</p></a> 
+      </div>
+      <div class="display-flex">
+        <img src="/images/icon-clock.svg" alt="">
+       <a href="#"><p>3 days left</p></a>
+      </div>
+    </div>
+
+    <!-- avater-section -->
+
+    <div class="avater">
+      <img src="/images/image-avatar.png" alt="">
+      <p>Creation of <a href="#">Jules Wyvern </a> </p>
+    </div>
+  </div>
   
-  Reliable, efficient delivery
-  Powered by Technology
-
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
-
-  Supervisor
-  Monitors activity to identify project roadblocks
-
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
-
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Bensaxxy">Bensaxxy</a>.
+  </div>
 </body>
 </html>
