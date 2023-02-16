@@ -39,12 +39,13 @@ body{
   position: relative;
 }
 
-.container h3{
+.container h1{
  color: var(--White);
  font-weight: 600;
  padding: 20px 0;
+ font-size: 18px;
 }
-.container h3:hover{
+.container h1:hover{
  color: var(--Cyan);
 }
 
