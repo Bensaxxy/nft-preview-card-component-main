@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   text-decoration: none;
   list-style: none;
 }
@@ -24,21 +24,61 @@ body{
   font-size: 18px;
 }
 
+/* main body */
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+/* container */
 .container{
   width: 24%;
   background-color: var(--Very-dark-blue-1);
-  margin: 60px auto;
   padding: 20px;
   border-radius: 10px;
 }
 
-.container .img{
-  width: 100%;
-  height: 240px;
-  border-radius: 8px;
+/* container image */
+.img-container{
   position: relative;
+  width: 100%;
+  /* height: 240px; */
 }
 
+/* image */
+.container .image{
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* hover container image */
+.container .img-container div{
+  position: absolute;
+  background-color: hsl(178, 100%, 50%, 60%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+}
+
+/* hover image */
+.img-container div:hover{
+  cursor: pointer;
+  opacity: 1;
+  border-radius: 8px;
+}
+
+/* hover main image */
+.container .img-container div img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* write up */
 .container h1{
  color: var(--White);
  font-weight: 600;
@@ -55,8 +95,8 @@ body{
  font-size: 15px;
 }
 
-/* money-section */
 
+/* money-section */
 .display-grid{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -85,8 +125,8 @@ body{
   font-size: 14px;
 }
 
-/* avater-section */
 
+/* avater-section */
 .avater{
   padding-top: 20px;
   display: flex;
@@ -113,6 +153,8 @@ body{
   color: var(--Cyan);
 }
 
+
+/* footer */
 .attribution{
   text-align: center;
   color: var(--White);
